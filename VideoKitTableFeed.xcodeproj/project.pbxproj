@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E9A982441D8A1E3B13B1938 /* Pods_VideoKitTikTokFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98339E5E0DC195C160A3E54E /* Pods_VideoKitTikTokFeed.framework */; };
-		9558D4C5255E10030076E8CF /* AllVideosFeedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9558D4C4255E10030076E8CF /* AllVideosFeedDataSource.swift */; };
-		9558D4D2255E15400076E8CF /* VideoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9558D4D1255E15400076E8CF /* VideoNode.swift */; };
+		950D278F25C22A7A00D0DBD3 /* VideoKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 950D278E25C22A7A00D0DBD3 /* VideoKitCore */; };
+		950D279125C22A7A00D0DBD3 /* VideoKitPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 950D279025C22A7A00D0DBD3 /* VideoKitPlayer */; };
+		950D279325C22A7A00D0DBD3 /* VideoKitRecorder in Frameworks */ = {isa = PBXBuildFile; productRef = 950D279225C22A7A00D0DBD3 /* VideoKitRecorder */; };
+		9558D4D2255E15400076E8CF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9558D4D1255E15400076E8CF /* VideoCell.swift */; };
 		95BC85F9255C6511004CB3EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC85F8255C6511004CB3EE /* AppDelegate.swift */; };
 		95BC85FB255C6511004CB3EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC85FA255C6511004CB3EE /* SceneDelegate.swift */; };
 		95BC85FD255C6511004CB3EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC85FC255C6511004CB3EE /* ViewController.swift */; };
@@ -20,11 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B808ACDA6FF741E939F5F5C /* Pods-VideoKitTikTokFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoKitTikTokFeed.debug.xcconfig"; path = "Target Support Files/Pods-VideoKitTikTokFeed/Pods-VideoKitTikTokFeed.debug.xcconfig"; sourceTree = "<group>"; };
-		64E08B4D47ECDBA4B9381E0D /* Pods-VideoKitTikTokFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoKitTikTokFeed.release.xcconfig"; path = "Target Support Files/Pods-VideoKitTikTokFeed/Pods-VideoKitTikTokFeed.release.xcconfig"; sourceTree = "<group>"; };
-		9558D4C4255E10030076E8CF /* AllVideosFeedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVideosFeedDataSource.swift; sourceTree = "<group>"; };
-		9558D4D1255E15400076E8CF /* VideoNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNode.swift; sourceTree = "<group>"; };
-		95BC85F5255C6511004CB3EE /* VideoKitTikTokFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoKitTikTokFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9558D4D1255E15400076E8CF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		95BC85F5255C6511004CB3EE /* VideoKitTableFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoKitTableFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BC85F8255C6511004CB3EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95BC85FA255C6511004CB3EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		95BC85FC255C6511004CB3EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +31,6 @@
 		95BC8604255C6513004CB3EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95BC8606255C6513004CB3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95D75723255F1012005CC781 /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
-		98339E5E0DC195C160A3E54E /* Pods_VideoKitTikTokFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoKitTikTokFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E9A982441D8A1E3B13B1938 /* Pods_VideoKitTikTokFeed.framework in Frameworks */,
+				950D279125C22A7A00D0DBD3 /* VideoKitPlayer in Frameworks */,
+				950D278F25C22A7A00D0DBD3 /* VideoKitCore in Frameworks */,
+				950D279325C22A7A00D0DBD3 /* VideoKitRecorder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,22 +50,21 @@
 		95BC85EC255C6511004CB3EE = {
 			isa = PBXGroup;
 			children = (
-				95BC85F7255C6511004CB3EE /* VideoKitTikTokFeed */,
+				95BC85F7255C6511004CB3EE /* VideoKitTableFeed */,
 				95BC85F6255C6511004CB3EE /* Products */,
 				95BC861C255C7421004CB3EE /* Frameworks */,
-				DE94F8E03D759D81004ADC3B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		95BC85F6255C6511004CB3EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95BC85F5255C6511004CB3EE /* VideoKitTikTokFeed.app */,
+				95BC85F5255C6511004CB3EE /* VideoKitTableFeed.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95BC85F7255C6511004CB3EE /* VideoKitTikTokFeed */ = {
+		95BC85F7255C6511004CB3EE /* VideoKitTableFeed */ = {
 			isa = PBXGroup;
 			children = (
 				95BC85F8255C6511004CB3EE /* AppDelegate.swift */,
@@ -76,50 +74,42 @@
 				95BC8601255C6513004CB3EE /* Assets.xcassets */,
 				95BC8603255C6513004CB3EE /* LaunchScreen.storyboard */,
 				95BC8606255C6513004CB3EE /* Info.plist */,
-				9558D4C4255E10030076E8CF /* AllVideosFeedDataSource.swift */,
-				9558D4D1255E15400076E8CF /* VideoNode.swift */,
+				9558D4D1255E15400076E8CF /* VideoCell.swift */,
 				95D75723255F1012005CC781 /* PlayerNode.swift */,
 			);
-			path = VideoKitTikTokFeed;
+			path = VideoKitTableFeed;
 			sourceTree = "<group>";
 		};
 		95BC861C255C7421004CB3EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98339E5E0DC195C160A3E54E /* Pods_VideoKitTikTokFeed.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DE94F8E03D759D81004ADC3B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2B808ACDA6FF741E939F5F5C /* Pods-VideoKitTikTokFeed.debug.xcconfig */,
-				64E08B4D47ECDBA4B9381E0D /* Pods-VideoKitTikTokFeed.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95BC85F4255C6511004CB3EE /* VideoKitTikTokFeed */ = {
+		95BC85F4255C6511004CB3EE /* VideoKitTableFeed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95BC8609255C6513004CB3EE /* Build configuration list for PBXNativeTarget "VideoKitTikTokFeed" */;
+			buildConfigurationList = 95BC8609255C6513004CB3EE /* Build configuration list for PBXNativeTarget "VideoKitTableFeed" */;
 			buildPhases = (
-				145AF8B0755ADAE6522FE09B /* [CP] Check Pods Manifest.lock */,
 				95BC85F1255C6511004CB3EE /* Sources */,
 				95BC85F2255C6511004CB3EE /* Frameworks */,
 				95BC85F3255C6511004CB3EE /* Resources */,
-				3AE1E7242D4BD1BB34661446 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = VideoKitTikTokFeed;
+			name = VideoKitTableFeed;
+			packageProductDependencies = (
+				950D278E25C22A7A00D0DBD3 /* VideoKitCore */,
+				950D279025C22A7A00D0DBD3 /* VideoKitPlayer */,
+				950D279225C22A7A00D0DBD3 /* VideoKitRecorder */,
+			);
 			productName = VideoKitTikTokFeed;
-			productReference = 95BC85F5255C6511004CB3EE /* VideoKitTikTokFeed.app */;
+			productReference = 95BC85F5255C6511004CB3EE /* VideoKitTableFeed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95BC85F0255C6511004CB3EE /* Build configuration list for PBXProject "VideoKitTikTokFeed" */;
+			buildConfigurationList = 95BC85F0255C6511004CB3EE /* Build configuration list for PBXProject "VideoKitTableFeed" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,11 +135,14 @@
 				Base,
 			);
 			mainGroup = 95BC85EC255C6511004CB3EE;
+			packageReferences = (
+				950D278D25C22A7A00D0DBD3 /* XCRemoteSwiftPackageReference "VideoKit-iOS" */,
+			);
 			productRefGroup = 95BC85F6255C6511004CB3EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95BC85F4255C6511004CB3EE /* VideoKitTikTokFeed */,
+				95BC85F4255C6511004CB3EE /* VideoKitTableFeed */,
 			);
 		};
 /* End PBXProject section */
@@ -167,48 +160,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		145AF8B0755ADAE6522FE09B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VideoKitTikTokFeed-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3AE1E7242D4BD1BB34661446 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VideoKitTikTokFeed/Pods-VideoKitTikTokFeed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VideoKitTikTokFeed/Pods-VideoKitTikTokFeed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoKitTikTokFeed/Pods-VideoKitTikTokFeed-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		95BC85F1255C6511004CB3EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -217,8 +168,7 @@
 				95BC85FD255C6511004CB3EE /* ViewController.swift in Sources */,
 				95BC85F9255C6511004CB3EE /* AppDelegate.swift in Sources */,
 				95D75724255F1012005CC781 /* PlayerNode.swift in Sources */,
-				9558D4D2255E15400076E8CF /* VideoNode.swift in Sources */,
-				9558D4C5255E10030076E8CF /* AllVideosFeedDataSource.swift in Sources */,
+				9558D4D2255E15400076E8CF /* VideoCell.swift in Sources */,
 				95BC85FB255C6511004CB3EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,18 +313,17 @@
 		};
 		95BC860A255C6513004CB3EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B808ACDA6FF741E939F5F5C /* Pods-VideoKitTikTokFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QGBDV75XCA;
-				INFOPLIST_FILE = VideoKitTikTokFeed/Info.plist;
+				INFOPLIST_FILE = VideoKitTableFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.video.VideoKitTikTokFeed;
+				PRODUCT_BUNDLE_IDENTIFIER = io.video.VideoKitTableFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,18 +332,17 @@
 		};
 		95BC860B255C6513004CB3EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64E08B4D47ECDBA4B9381E0D /* Pods-VideoKitTikTokFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QGBDV75XCA;
-				INFOPLIST_FILE = VideoKitTikTokFeed/Info.plist;
+				INFOPLIST_FILE = VideoKitTableFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.video.VideoKitTikTokFeed;
+				PRODUCT_BUNDLE_IDENTIFIER = io.video.VideoKitTableFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95BC85F0255C6511004CB3EE /* Build configuration list for PBXProject "VideoKitTikTokFeed" */ = {
+		95BC85F0255C6511004CB3EE /* Build configuration list for PBXProject "VideoKitTableFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95BC8607255C6513004CB3EE /* Debug */,
@@ -413,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95BC8609255C6513004CB3EE /* Build configuration list for PBXNativeTarget "VideoKitTikTokFeed" */ = {
+		95BC8609255C6513004CB3EE /* Build configuration list for PBXNativeTarget "VideoKitTableFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95BC860A255C6513004CB3EE /* Debug */,
@@ -423,6 +371,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		950D278D25C22A7A00D0DBD3 /* XCRemoteSwiftPackageReference "VideoKit-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Video-io/VideoKit-iOS";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		950D278E25C22A7A00D0DBD3 /* VideoKitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 950D278D25C22A7A00D0DBD3 /* XCRemoteSwiftPackageReference "VideoKit-iOS" */;
+			productName = VideoKitCore;
+		};
+		950D279025C22A7A00D0DBD3 /* VideoKitPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 950D278D25C22A7A00D0DBD3 /* XCRemoteSwiftPackageReference "VideoKit-iOS" */;
+			productName = VideoKitPlayer;
+		};
+		950D279225C22A7A00D0DBD3 /* VideoKitRecorder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 950D278D25C22A7A00D0DBD3 /* XCRemoteSwiftPackageReference "VideoKit-iOS" */;
+			productName = VideoKitRecorder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95BC85ED255C6511004CB3EE /* Project object */;
 }

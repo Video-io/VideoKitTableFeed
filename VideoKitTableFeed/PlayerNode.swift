@@ -1,10 +1,10 @@
 //
 //  PlayerNode.swift
-//  VideoKitTikTokFeed
+//  VideoKitTableFeed
 //
 //  Created by Dennis Stücken on 11/13/20.
 //
-import AsyncDisplayKit
+import UIKit
 import VideoKitPlayer
 import VideoKitCore
 
@@ -13,7 +13,7 @@ protocol PlayerNodeDelegate {
     func releasePlayer(forVideo video: VKVideo)
 }
 
-class PlayerNode: ASDisplayNode {
+class PlayerNode: UIView {
     var delegate: PlayerNodeDelegate?
     var video: VKVideo
     var player: VKPlayerViewController?
@@ -21,18 +21,11 @@ class PlayerNode: ASDisplayNode {
 
     init(video: VKVideo) {
         self.video = video
+        super.init(frame: .zero)
     }
     
-    override func didEnterVisibleState() {
-        requestPlayer()
-    }
-    
-    override func didEnterDisplayState() {
-        requestPlayer()
-    }
-    
-    override func didEnterPreloadState() {
-        releasePlayer()
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func requestPlayer() {
@@ -46,7 +39,7 @@ class PlayerNode: ASDisplayNode {
                 self.player = player
                 self.player!.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
                 self.player!.view.clipsToBounds = true
-                self.view.addSubview(self.player!.view)
+                self.addSubview(self.player!.view)
                 
                 if (self.shouldPlay) {
                     self.play()
@@ -90,13 +83,5 @@ class PlayerNode: ASDisplayNode {
         guard let player = self.player else { return }
         
         player.playState == .playing ? pause() : play()
-    }
-    
-    func mute() {
-        player?.muted = true
-    }
-    
-    func unmute() {
-        player?.muted = false
     }
 }
