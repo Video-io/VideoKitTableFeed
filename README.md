@@ -1,5 +1,5 @@
 # VideoKitTikTokFeed
-iOS Example on how to create a tiktok like video feed using [video.io](https://video.io), VideoKit and VideoKit/Player
+iOS Example on how to create a TableView video feed using [video.io](https://video.io), VideoKit and VideoKit/Player
 
 ## Requirements
 
@@ -8,21 +8,14 @@ iOS Example on how to create a tiktok like video feed using [video.io](https://v
 
 ## Installation
 
-Install [CocoaPods](https://guides.cocoapods.org/using/getting-started.html) if you haven't already.
-
 Clone this repository.
 
 ```bash
-git clone git@github.com:Video-io/VideoKitTikTokFeed.git
+git clone git@github.com:Video-io/VideoKitTableFeed.git
 ```
 
-Install dependencies using CocoaPods
+Open VideoKitTableFeed.xcodeproj
 
 ```bash
-pod install
+open VideoKitTableFeed.xcodeproj
 ```
-
-Open VideoKitTikTokFeed.xcworkspace
-
-```bash
-open VideoKitTikTokFeed.xcworkspace
