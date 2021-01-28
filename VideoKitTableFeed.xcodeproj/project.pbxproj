@@ -10,18 +10,17 @@
 		950D278F25C22A7A00D0DBD3 /* VideoKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 950D278E25C22A7A00D0DBD3 /* VideoKitCore */; };
 		950D279125C22A7A00D0DBD3 /* VideoKitPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 950D279025C22A7A00D0DBD3 /* VideoKitPlayer */; };
 		950D279325C22A7A00D0DBD3 /* VideoKitRecorder in Frameworks */ = {isa = PBXBuildFile; productRef = 950D279225C22A7A00D0DBD3 /* VideoKitRecorder */; };
-		9558D4D2255E15400076E8CF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9558D4D1255E15400076E8CF /* VideoCell.swift */; };
+		950D292025C23D4900D0DBD3 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950D291F25C23D4900D0DBD3 /* PlayerTableViewCell.swift */; };
 		95BC85F9255C6511004CB3EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC85F8255C6511004CB3EE /* AppDelegate.swift */; };
 		95BC85FB255C6511004CB3EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC85FA255C6511004CB3EE /* SceneDelegate.swift */; };
 		95BC85FD255C6511004CB3EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BC85FC255C6511004CB3EE /* ViewController.swift */; };
 		95BC8600255C6511004CB3EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BC85FE255C6511004CB3EE /* Main.storyboard */; };
 		95BC8602255C6513004CB3EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BC8601255C6513004CB3EE /* Assets.xcassets */; };
 		95BC8605255C6513004CB3EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BC8603255C6513004CB3EE /* LaunchScreen.storyboard */; };
-		95D75724255F1012005CC781 /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D75723255F1012005CC781 /* PlayerNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9558D4D1255E15400076E8CF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		950D291F25C23D4900D0DBD3 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		95BC85F5255C6511004CB3EE /* VideoKitTableFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoKitTableFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BC85F8255C6511004CB3EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95BC85FA255C6511004CB3EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +29,6 @@
 		95BC8601255C6513004CB3EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95BC8604255C6513004CB3EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95BC8606255C6513004CB3EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95D75723255F1012005CC781 /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +68,11 @@
 				95BC85F8255C6511004CB3EE /* AppDelegate.swift */,
 				95BC85FA255C6511004CB3EE /* SceneDelegate.swift */,
 				95BC85FC255C6511004CB3EE /* ViewController.swift */,
+				950D291F25C23D4900D0DBD3 /* PlayerTableViewCell.swift */,
 				95BC85FE255C6511004CB3EE /* Main.storyboard */,
 				95BC8601255C6513004CB3EE /* Assets.xcassets */,
 				95BC8603255C6513004CB3EE /* LaunchScreen.storyboard */,
 				95BC8606255C6513004CB3EE /* Info.plist */,
-				9558D4D1255E15400076E8CF /* VideoCell.swift */,
-				95D75723255F1012005CC781 /* PlayerNode.swift */,
 			);
 			path = VideoKitTableFeed;
 			sourceTree = "<group>";
@@ -165,10 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950D292025C23D4900D0DBD3 /* PlayerTableViewCell.swift in Sources */,
 				95BC85FD255C6511004CB3EE /* ViewController.swift in Sources */,
 				95BC85F9255C6511004CB3EE /* AppDelegate.swift in Sources */,
-				95D75724255F1012005CC781 /* PlayerNode.swift in Sources */,
-				9558D4D2255E15400076E8CF /* VideoCell.swift in Sources */,
 				95BC85FB255C6511004CB3EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QGBDV75XCA;
 				INFOPLIST_FILE = VideoKitTableFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QGBDV75XCA;
 				INFOPLIST_FILE = VideoKitTableFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
