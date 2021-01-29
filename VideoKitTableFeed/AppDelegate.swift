@@ -23,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         group.enter()
         
         DispatchQueue.global(qos: .default).async {
+            VKLogger.activeLogs = [
+                .VideoServer,
+                .HttpRequester,
+                .NotificationManager
+            ]
+            
             VKSession.current.start(
                 apiToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2lkIjoiMmlUbGdDSHB4cVdSQ01LWGRSZDciLCJyb2xlIjoiYXBwIiwiaWF0IjoxNjAyMjY2NTYyLCJpc3MiOiJ2aWRlby5pbyIsImp0aSI6IjUyTnBNcFpvenA3cGxPa2dPVFFWLTBudmh6In0.8d6rhHDLSB0K1OQgUg5iEtXfkvrMr1OUmIzBppJEjxc",
                 identity: UUID().uuidString) { (sessionState, sessionData, error) in
