@@ -26,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             VKLogger.activeLogs = [
                 .VideoServer,
                 .HttpRequester,
-                .NotificationManager
+                .NotificationManager,
+                .Session
             ]
             
             VKSession.current.start(
