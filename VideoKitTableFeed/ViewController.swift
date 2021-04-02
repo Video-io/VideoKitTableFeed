@@ -138,7 +138,7 @@ extension ViewController {
         let minRatio = tableView.frame.width / (tableView.frame.height - 2 * cellMargin)
         let ratio = CGFloat.maximum(minRatio, videoRatio)
 
-        return view.frame.width / ratio + cellMargin
+        return max(320, view.frame.width / ratio + cellMargin)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
